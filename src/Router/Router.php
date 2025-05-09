@@ -24,7 +24,7 @@ class Router
     public function match(Route ...$routes): Response
     {
         $method = $this->getRequest()->getMethod();
-        $path = rtrim($this->getRequest()->getPathInfo(), '/');
+        $path = $this->getRequest()->getPathInfo();
 
         foreach ($routes as $route) {
             if ($method === $route->getMethod() && $path === $route->getPath()) {
