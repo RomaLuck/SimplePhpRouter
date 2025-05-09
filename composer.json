@@ -1,0 +1,20 @@
+{
+  "name": "romaluck/php-router",
+  "description": "A simple router for PHP",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Romaluck\\PhpRouter\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "romaluck"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "symfony/http-foundation": "^7.2"
+  }
+}
